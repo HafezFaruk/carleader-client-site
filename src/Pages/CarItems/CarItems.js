@@ -11,12 +11,12 @@ const CarItems = () => {
     }, [])
 
     return (
-        <div className="add-food py-5 text-center">
+        <div className="pb-1 mt-5 text-center">
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
                         <div className="section-title mb-4">
-                            <h2>Our Car Leader Services</h2>
+                            <h1 className="text-danger">Our Car Leader Services</h1>
                         </div>
                     </div>
                 </div>

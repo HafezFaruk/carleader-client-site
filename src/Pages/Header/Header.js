@@ -20,7 +20,7 @@ const Header = () => {
           <Navbar.Brand href="/home">
             <img src={logo} alt="" />
           </Navbar.Brand>
-          <Navbar.Toggle className="bg-white text-dark" />
+          <Navbar.Toggle/>
           <Navbar.Collapse className="justify-content-end">
             <Nav.Link as={Link} className="text-white" to="/home">
               Home

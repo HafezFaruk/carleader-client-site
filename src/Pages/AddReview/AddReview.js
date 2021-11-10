@@ -18,7 +18,7 @@ const AddReview = () => {
             })
     }
     return (
-        <div className="add-food py-5 text-center">
+        <div className="py-5 text-center">
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
@@ -29,7 +29,7 @@ const AddReview = () => {
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-md-6">
-                        <div className="single-add-food">
+                        
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <input className="form-control mb-3" {...register("email")} value={user?.email} required />
                             <input className="form-control mb-3" {...register("name")} value={user?.displayName} required />
@@ -37,7 +37,7 @@ const AddReview = () => {
                             <textarea rows="4"  className="form-control mb-3" {...register("comment")} placeholder="Please writ your comment here" required/>
                             <input className="btn btn-success w-25 fw-bold" type="submit" />
                         </form>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

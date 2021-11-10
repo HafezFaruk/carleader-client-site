@@ -1,0 +1,19 @@
+.contact-bg{
+    background-image: url(../../images/contact-bg.jpg);
+    background-repeat: no-repeat;
+}
+
+.contact-a, 
+.contact-b, 
+.contact-c{
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    background: rgba(61, 60, 60, 0.548);
+    border-radius: 20px;
+    margin: 8px 0;
+}
+.contact-icon{
+    font-size: 2rem;
+    color: #ff042ecb;
+}
