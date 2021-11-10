@@ -1,0 +1,113 @@
+[
+
+    {
+        "img": "https://i.ibb.co/dBJPf1t/1.jpg",
+        "name": "Eagle Talon",
+        "price": "32320",
+        "description": "The Eagle Talon is a two-door 2+2, front-wheel drive (FWD) or all-wheel drive (AWD) hatchback coupé manufactured and marketed between 1989 and 1998 and sold by Eagle along with rebadged variants the Plymouth Laser and Mitsubishi Eclipse."
+    },
+   
+    {
+        "img": "https://i.ibb.co/gDGKctT/2.jpg",
+        "name": "Edsel Bermuda",
+        "price": "7640",
+        "description": "The Edsel Bermuda is a station wagon that was produced and sold by Edsel in 1958. Like the Edsel Villager and Edsel Roundup station wagons, the Bermuda was built on a 116-inch (2,946 mm) wheelbase shared with Ford's station wagons, as well as core body stampings."
+    },
+    {
+        "img": "https://i.ibb.co/7SNfjTR/3.jpg",
+        "name": "Edsel Corsair",
+        "price": "79680",
+        "description": "The Edsel Corsair is an automobile that was produced and sold by Edsel in 1958 and 1959. For 1958, the Corsair was built on the longer, wider Edsel platform shared with Mercury. For 1959, the Corsair shared the shorter, narrower Ranger platform with For"
+    },
+    {
+        "img": "https://i.ibb.co/f9dCqNk/4.jpg",
+        "name": "Edsel Citation",
+        "price": "87100",
+        "description": "The Edsel Citation is an automobile that was produced by the Edsel division of Ford for the 1958 model year. The flagship Edsel model line, the Citation was offered as a two-door convertible; all Citation sedans were produced as hardtops. Slotted above the Corsair, the exterior of the Citation was distinguished"
+    },
+    {
+        "img": "https://i.ibb.co/G9Jxc3P/5.jpg",
+        "name": "Edsel Pacer",
+        "price": "89500",
+        "description": "The Edsel Pacer is an automobile that was produced and sold by Edsel in 1958. The Pacer was based on the shorter narrower Edsel platform, shared with Ford and the Ranger."
+    },
+  
+    {
+        "img": "https://i.ibb.co/4T9mkMQ/6.jpg",
+        "name": "Edsel Ranger",
+        "price": "23150",
+        "description": "The Edsel Ranger is an automobile that was produced and sold by the newly formed Edsel Division of Ford for the 1958–1960 model years. It was built on the shorter, narrower Edsel platform, shared with Ford and Edsel Pacer models."
+    },
+    {
+        "img": "https://i.ibb.co/MDpM12g/7.jpg",
+        "name": "Edsel Roundup",
+        "price": "12360",
+        "description": "The Edsel Roundup is a station wagon that was produced and sold by Edsel in 1958. Like the Villager and Bermuda station wagons, the Roundup was built on a 116-inch (2,946 mm) wheelbase shared with Ford's station wagons, as well as core body stampings. It had an approach angle of 21° and an overall le"
+    },
+    {
+        "img": "https://i.ibb.co/2SY9R1m/8.jpg",
+        "name": "Edsel Villager",
+        "price": "76400",
+        "description": "The Edsel Villager is a station wagon that was produced and sold by Edsel from 1958 to 1960. Like the two-door Roundup and premium Bermuda station wagons, the Villager was initially built on a 116 in wheelbase shared with Ford's station wagons, and, throughout its lifespan, shared Ford's"
+    },
+    {
+        "img": "https://i.ibb.co/k6wVPnf/9.jpg",
+        "name": "Excalibur Series II",
+        "price": "19020",
+        "description": "The Excalibur automobile was a car styled after the 1928 Mercedes-Benz SSK by Brooks Stevens for Studebaker. Stevens subsequently formed a company to manufacture and market the cars, which were a standard Studebaker car with special bodywork."
+    },
+    {
+        "img": "https://i.ibb.co/WsBPrMR/10.jpg",
+        "name": "Facel Vega FV/FVS/HK500",
+        "price": "78130",
+        "description": "The Facel Vega FV/FVS is a car produced by French automaker Facel from 1954 to 1959. It continued until 1962 as the HK500."
+    },
+    {
+        "img": "https://i.ibb.co/bH5NjHw/11.jpg",
+        "name": "Facellia",
+        "price": "4130",
+        "description": "Facel S.A. was a French manufacturer of pressed steel automobile components, later complete automobiles of their own design. To intensify its World War II war effort, French subcontracting company for military aeronautics Bronzavia created a subsidiary called Facel in December 1939. After the war, in 1945, by merging with Métallon, Facel began to make short-run special bodies, coupés or cabriolets for Simca, Ford of France, Panhard and Delahaye. Approximately 2,900 cars of all models were hand-built in Facel's short life."
+    },
+    {
+        "img": "https://i.ibb.co/fQkMCg7/12.jpg",
+        "name": "Ferrari 166 MM",
+        "price": "10230",
+        "description": "The Ferrari 166 S was a sports racing car built by Ferrari between 1948 and 1953, an evolution of its Colombo V12-powered 125 S racer. It was adapted into a sports car for the street in the form of the 166 Inter."
+    },
+    {
+        "img": "https://i.ibb.co/jTXSSFX/13.jpg",
+        "name": "Ferrari 250 GT Coupe",
+        "price": "17630",
+        "description": "The Ferrari 250 is a series of sports cars and grand tourers built by Ferrari from 1952 to 1964. The company's most successful early line, the 250 series includes many variants designed for road use or sports car racing. 250 series cars are characterized by their use of a 3.0 L (2,953 cc) Colombo V12 engin"
+    },
+    {
+        "img": "https://i.ibb.co/MBZDq4h/14.jpg",
+        "name": "Ferrari 250 GTO",
+        "price": "19830",
+        "description": "The Ferrari 250 GTO is a GT car produced by Ferrari from 1962 to 1964 for homologation into the FIA's Group 3 Grand Touring Car category. It was powered by Ferrari's Tipo 168/62 Colombo V12 engine."
+    },
+    {
+        "img": "https://i.ibb.co/M923qj8/15.jpg",
+        "name": "Ferrari 308 GTB and GTS",
+        "price": "86130",
+        "description": "The Ferrari 308 GTB berlinetta and targa topped 308 GTS are V8 mid-engined, two-seater sports cars manufactured by the Italian company Ferrari from 1975 to 1985. The 308 replaced the Dino 246 GT and GTS in 1975 and was updated as the 328 GTB/GTS in 1985. The similar 208 GTB and GTS wer"
+    },
+    {
+        "img": "https://i.ibb.co/mGBvQYJ/16.jpg",
+        "name": "Ferrari 333 SP",
+        "price": "10930",
+        "description": "The Ferrari 333 SP is a sports prototype race car that was built by Italian race car manufacturer Dallara and later Michelotto to compete in the World Sports Car championship for Ferrari. Unveiled at the end of 1993, at the behest of amateur racer Giampiero Moretti, the 333 SP marked"
+    },
+    {
+        "img": "https://i.ibb.co/5Gj6kWK/17.jpg",
+        "name": "Ferrari 550 Maranello",
+        "price": "18730",
+        "description": "The Ferrari 550 Maranello is a front-engine V12 2-seat grand tourer built by Ferrari from 1996 to 2001. The 550 Maranello marked Ferrari's return to a front-engine, rear-wheel drive layout for its 2-seater 12-cylinder model, 23 years after the 365 GTB/4 Daytona had been replaced by the mid-engined Berlinett"
+    },
+    {
+        "img": "https://i.ibb.co/2yY46Kn/18.jpg",
+        "name": "LaFerrari",
+        "price": "13098",
+        "description": "LaFerrari, project name F150 is a limited production mid-engine Plug-in hybrid sports car built by Italian automotive manufacturer Ferrari. LaFerrari means The Ferrari in Italian and some other Romance languages, in the sense that it is the definitive Ferra"
+    }
+]
