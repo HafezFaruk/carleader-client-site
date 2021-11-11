@@ -14,8 +14,8 @@ const Banner = () => {
                     alt="First slide"
                 />
                 <Carousel.Caption>
-                    <h3>Medicinal National Food Delivery</h3>
-                    <p className="w-50 mx-auto" >Natural medicines are delivered such as tree neem trees have ingredients national medicines from Nassar</p>
+                    <h3 className="text-danger">BUSINESS RENTALS</h3>
+                    <p className="w-75 mx-auto text-danger">You can completely rely on us while having an important business trip. We guarantee a successful and safe driving.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -26,8 +26,8 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                    <h3>Family fast food delivery service</h3>
-                    <p>Our fast food national food reaches the family very fast</p>
+                    <h3 className="text-danger">LUXURY RENTALS</h3>
+                    <p className="w-75 mx-auto text-danger">Our company provides an impressive selection of luxury cars for first class business and private short distance trips.</p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -38,8 +38,8 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption>
-                <h3>Natural food delivery activities</h3>
-                <p className="w-50 mx-auto" >Daily natural food is delivered from the village farmers with water in a preserved way</p>
+                <h3 className="text-danger">TRAVELING RENTALS</h3>
+                <p className="w-75 mx-auto text-danger">Traveling with comfort is our company’s goal and top priority. We care about your experience anywhere you go.</p>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

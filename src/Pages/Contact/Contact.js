@@ -3,8 +3,8 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import { BsFillGeoAltFill } from "react-icons/bs";
-
 import "./Contact.css";
+
 const Contact = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
@@ -24,13 +24,16 @@ const Contact = () => {
       <div className="row row-cols-1 row-cols-xs-1 row-cols-md-2 row-cols-lg-2  g-2 g-lg-3 mt-5 mx-3">
         <div className="col text-start text-white">
           <div>
-            <h4>
-              GOT ANY QUESTIONS?<span className="text-danger">___________</span>{" "}
-            </h4>
-            <h1>GET IN TOUCH</h1>
-            <p>
-              CarLeader has a strong and committed sales staff with many years of
-              experience satisfying our customers’ needs.
+            <div className="contact-text">
+              <h4>
+                GOT ANY QUESTIONS?
+                <span className="text-danger">___________</span>{" "}
+              </h4>
+              <h1>GET IN TOUCH</h1>
+            </div>
+            <p className="contact-text">
+              CarLeader has a strong and committed sales staff with many years
+              of experience satisfying our customers’ needs.
             </p>
           </div>
 
@@ -45,7 +48,9 @@ const Contact = () => {
           </div>
 
           <div className="contact-b">
-            <span className="me-3 contact-icon"><FaPhoneAlt/></span>
+            <span className="me-3 contact-icon">
+              <FaPhoneAlt />
+            </span>
             <div>
               <h3>Call Center:</h3>
               <p>800-123-4567</p>
@@ -54,7 +59,7 @@ const Contact = () => {
 
           <div className="contact-c">
             <span className="me-3 contact-icon">
-            <FaEnvelope/>
+              <FaEnvelope />
             </span>
             <div>
               <h3>E-mail:</h3>
@@ -63,7 +68,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="col bg-dark py-5 px-5">
+        <div className="col bg-dark py-4 px-4">
           <form onSubmit={handleSubmit(onSubmit)}>
             <input
               className="form-control bg-dark mb-3"
@@ -90,7 +95,7 @@ const Contact = () => {
               required
             />
             <textarea
-              rows="4"
+              rows="8"
               className="form-control bg-dark text-white mb-3"
               {...register("message")}
               placeholder="Your Message"

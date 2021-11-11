@@ -5,16 +5,17 @@ import './ManageOrders.css';
 
 const ManageOrders = () => {
     
-    const [orders, setOrders] = useState([]);
+    const [carOrders, setCarOrders] = useState([]);
     useEffect(()=> {
-        fetch('http://localhost:5000/orders/')
+        fetch('http://localhost:5000/carOrders')
         .then(res => res.json())
-        .then(data => setOrders(data))
-    }, [])
+        .then(data => setCarOrders(data))
+    }, [carOrders])
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure you want to delete');
         if(proceed){
-            const url = `http://localhost:5000/orders/${id}`;
+            const url = `http://localhost:5000/carOrders/${id}`;
+            console.log(url);
             fetch(url, {
                 method: 'DELETE',
             })
@@ -22,8 +23,8 @@ const ManageOrders = () => {
             .then(data => {
                 if (data.deletedCount > 0){
                     alert('Deleted Successfully');
-                    const remainingProducts = orders.filter(order => order._id !== id);
-                    setOrders(remainingProducts);
+                    const remainingProducts = carOrders.filter(order => order?._id !== id);
+                    setCarOrders(remainingProducts);
                 }
             })
         }
@@ -53,14 +54,14 @@ const ManageOrders = () => {
                                 </thead>
                                 <tbody>
                                     {
-                                    orders.map(order => <tr key={order._id}>
-                                            <td>{order._id}</td>
-                                            <td>{order.name}</td>
-                                            <td>{order.price}</td>
-                                            <td>{order.status}</td>
+                                    carOrders.map(order => <tr key={order._id}>
+                                            <td>{order?._id}</td>
+                                            <td>{order?.name}</td>
+                                            <td>{order?.price}</td>
+                                            <td>{order?.status}</td>
                                             <td>
                                                 <Link to={`/update/${order._id}`}><button className="btn btn-primary">Update</button></Link>
-                                                <button onClick={() => handleDelete(order._id)} className="btn btn-danger ms-2">Delete</button>
+                                                <button onClick={() => handleDelete(order?._id)} className="btn btn-danger ms-2">Delete</button>
                                             </td>
                                         </tr>
                                     )} 

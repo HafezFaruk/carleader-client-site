@@ -9,7 +9,7 @@ const MyOrders = () => {
         fetch(`http://localhost:5000/orders/${user?.email}`)
         .then(res => res.json())
         .then(data => setMyOrders(data))
-    }, [user.email])
+    }, [user?.email])
 
     const handleCancel = id => {
         const proceed = window.confirm('Are you sure you want to delete');
@@ -22,7 +22,7 @@ const MyOrders = () => {
             .then(data => {
                 if (data.deletedCount > 0){
                     alert('Deleted Successfully');
-                    const remainingProducts = myOrders.filter(order => order._id !== id);
+                    const remainingProducts = myOrders?.filter(order => order?._id !== id);
                     setMyOrders(remainingProducts);
                 }
             })
@@ -44,8 +44,8 @@ const MyOrders = () => {
                         <Table striped bordered>
                                 <thead>
                                     <tr>
-                                        <th>Id</th>
-                                        <th>Product Name</th>
+                                        <th>Product Id</th>
+                                        <th>Customer Name</th>
                                         <th>Price</th>
                                         <th>Status</th>
                                         <th>Actions</th>
@@ -54,12 +54,12 @@ const MyOrders = () => {
                                 <tbody>
                                     {
                                     myOrders.map(order => <tr key={order._id}>
-                                            <td>{order._id}</td>
-                                            <td>{order.name}</td>
-                                            <td>{order.price}</td>
-                                            <td>{order.status}</td>
+                                            <td>{order?._id}</td>
+                                            <td>{order?.name}</td>
+                                            <td>{order?.price}</td>
+                                            <td>{order?.status}</td>
                                             <td>
-                                                <button onClick={() => handleCancel(order._id)} className="btn btn-danger ms-2">Cancel</button>
+                                                <button onClick={() => handleCancel(order?._id)} className="btn btn-danger ms-2">Cancel</button>
                                             </td>
                                         </tr>
                                     )} 
