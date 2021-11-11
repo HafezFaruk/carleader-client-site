@@ -20,16 +20,20 @@ const Header = () => {
           <Navbar.Brand href="/home">
             <img src={logo} alt="" />
           </Navbar.Brand>
-          <Navbar.Toggle/>
+          <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Nav.Link as={Link} className="text-white" to="/home">
               Home
             </Nav.Link>
+
             <Nav.Link as={Link} className="text-white" to="/explore">
               Explore
             </Nav.Link>
             {user.email && (
               <>
+                <Nav.Link as={Link} className="text-white" to="/dashboard">
+                  Dashboard
+                </Nav.Link>
                 <Nav.Link as={Link} className="text-white" to="/AddReview">
                   AddReview
                 </Nav.Link>

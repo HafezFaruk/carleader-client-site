@@ -15,6 +15,7 @@ import UpdateStatus from './Pages/UpdateStatus/UpdateStatus';
 import AddReview from './Pages/AddReview/AddReview';
 import Explore from './Pages/Explore/Explore';
 import Register from './Pages/Register/Register';
+import Dashboard from './Pages/Dashboard/Dashboard';
 
 
 function App() {
@@ -50,6 +51,9 @@ function App() {
             </PrivateRoute>
             <PrivateRoute exact path="/manageorders">
               <ManageOrders />
+            </PrivateRoute>
+            <PrivateRoute exact path="/dashboard">
+              <Dashboard />
             </PrivateRoute>
             <Route exact path="/update/:id">
               <UpdateStatus />

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { faStar as fullStar } from "@fortawesome/free-solid-svg-icons";
 import { faStar as emptyStar } from "@fortawesome/free-regular-svg-icons";

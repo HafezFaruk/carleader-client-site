@@ -62,7 +62,7 @@ const MyOrders = () => {
                                                 <button onClick={() => handleCancel(order?._id)} className="btn btn-danger ms-2">Cancel</button>
                                             </td>
                                         </tr>
-                                    )} 
+                                    )}
                                 </tbody>
                             </Table>
                         </div>

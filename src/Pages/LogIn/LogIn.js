@@ -4,14 +4,20 @@ import { useHistory, useLocation } from "react-router";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 
-
 const LogIn = () => {
-  const { signInWithGoogle, user, setUser, logOut, setIsLoading,handleEmailLogin } = useAuth();
+  const {
+    signInWithGoogle,
+    user,
+    setUser,
+    logOut,
+    setIsLoading,
+    handleEmailLogin,
+  } = useAuth();
   const { register, handleSubmit, reset } = useForm();
   const history = useHistory();
   const location = useLocation();
 
-  const url = location.state?.from || "/home";
+  const url = location?.state?.from || "/home";
 
   const handleGoogleLogin = () => {
     signInWithGoogle()
@@ -27,8 +33,8 @@ const LogIn = () => {
   };
 
   const onSubmit = (data) => {
-    handleEmailLogin(data.email, data.password)
-        reset();
+    handleEmailLogin(data.email, data.password);
+    reset();
   };
   return (
     <>
@@ -57,32 +63,37 @@ const LogIn = () => {
             </form>
           </div>
         </div>
+
         <div className="mx-auto p-0">
-              <div className="text-center">
-                {!user?.displayName ? (
-                  <button
-                    onClick={handleGoogleLogin}
-                    className="btn btn-success text-white"
-                  >
-                    Google LogIn
-                  </button>
-                ) : (
-                  <button
-                    onClick={logOut}
-                    className="btn btn-success mt-3 text-white"
-                  >
-                    Log Out
-                  </button>
-                )}
-                <br />
-                <Link
-                  style={{ textDecoration: "none", color: "#000", marginTop: "10px"}}
-                  to="/register"
-                >
-                  New User ? Please Register
-                </Link>
-              </div>
-            </div>
+          <div className="text-center">
+            {!user?.displayName ? (
+              <button
+                onClick={handleGoogleLogin}
+                className="btn btn-success text-white"
+              >
+                Google LogIn
+              </button>
+            ) : (
+              <button
+                onClick={logOut}
+                className="btn btn-success mt-3 text-white"
+              >
+                Log Out
+              </button>
+            )}
+            <br />
+            <Link
+              style={{
+                textDecoration: "none",
+                color: "#000",
+                marginTop: "10px",
+              }}
+              to="/register"
+            >
+              New User ? Please Register
+            </Link>
+          </div>
+        </div>
       </div>
     </>
   );
