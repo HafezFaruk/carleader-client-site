@@ -6,7 +6,7 @@ import useAuth from "../../hooks/useAuth";
 import logo from "../../images/logo.png";
 
 const Header = () => {
-  const { user, logOut } = useAuth();
+  const { user, logOut} = useAuth();
   return (
     <>
       <Navbar
@@ -29,19 +29,11 @@ const Header = () => {
             <Nav.Link as={Link} className="text-white" to="/explore">
               Explore
             </Nav.Link>
+          
             {user.email && (
               <>
                 <Nav.Link as={Link} className="text-white" to="/dashboard">
                   Dashboard
-                </Nav.Link>
-                <Nav.Link as={Link} className="text-white" to="/AddReview">
-                  AddReview
-                </Nav.Link>
-                <Nav.Link as={Link} className="text-white" to="/myorders">
-                  MyOrder
-                </Nav.Link>
-                <Nav.Link as={Link} className="text-white" to="/manageorders">
-                  ManageOrders
                 </Nav.Link>
               </>
             )}

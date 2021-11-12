@@ -12,7 +12,7 @@ const AddReview = () => {
         axios.post('http://localhost:5000/review', data)
             .then(res => {
                 if (res.data.insertedId) {
-                    alert('added successfully');
+                    alert('Your Review added successfully');
                     reset();
                 }
             })
@@ -22,7 +22,7 @@ const AddReview = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <div className="section-title mb-4">
+                        <div className="mb-4">
                             <h2>Please write your valuable comment</h2>
                         </div>
                     </div>
@@ -31,10 +31,10 @@ const AddReview = () => {
                     <div className="col-md-6">
                         
                         <form onSubmit={handleSubmit(onSubmit)}>
-                            <input className="form-control mb-3" {...register("email")} value={user?.email} required />
-                            <input className="form-control mb-3" {...register("name")} value={user?.displayName} required />
+                            <input className="form-control mb-3" {...register("email")} value={user?.displayName} required />
+                            <input className="form-control mb-3" {...register("name")} value={user?.email} required />
                             <input className="form-control mb-3" type="number" {...register("rating")} placeholder="rating(0-5)" required/>
-                            <textarea rows="4"  className="form-control mb-3" {...register("comment")} placeholder="Please writ your comment here" required/>
+                            <textarea rows="4"  className="form-control mb-3" {...register("comment")} placeholder="Please write your comment here" required/>
                             <input className="btn btn-success w-25 fw-bold" type="submit" />
                         </form>
                         

@@ -10,12 +10,13 @@ import LogIn from './Pages/LogIn/LogIn';
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
 import ManageOrders from './Pages/ManageOrders/ManageOrders';
 import PrivateRoute from './routes/PrivateRoute';
-import MyOrders from './Pages/MyOrders/MyOrders';
+// import MyOrders from './Pages/MyOrders/MyOrders';
 import UpdateStatus from './Pages/UpdateStatus/UpdateStatus';
-import AddReview from './Pages/AddReview/AddReview';
+// import AddReview from './Pages/AddReview/AddReview';
 import Explore from './Pages/Explore/Explore';
 import Register from './Pages/Register/Register';
-import Dashboard from './Pages/Dashboard/Dashboard';
+import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
+// import MakeAdmin from './Pages/Dashboard/MakeAdmin/MakeAdmin';
 
 
 function App() {
@@ -40,21 +41,17 @@ function App() {
             <Route exact path="/register">
               <Register />
             </Route>
-            <PrivateRoute exact path="/AddReview">
-              <AddReview />
+            <PrivateRoute path="/dashboard">
+              <Dashboard />
             </PrivateRoute>
             <PrivateRoute exact path="/placeorder/:id">
               <PlaceOrder />
             </PrivateRoute>
-            <PrivateRoute exact path="/myorders">
-              <MyOrders />
-            </PrivateRoute>
-            <PrivateRoute exact path="/manageorders">
+          
+            <PrivateRoute exact path="/manageOrders">
               <ManageOrders />
             </PrivateRoute>
-            <PrivateRoute exact path="/dashboard">
-              <Dashboard />
-            </PrivateRoute>
+            
             <Route exact path="/update/:id">
               <UpdateStatus />
             </Route>
