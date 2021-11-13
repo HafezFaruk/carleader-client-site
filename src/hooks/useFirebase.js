@@ -3,6 +3,7 @@ import {
   signInWithPopup,
   GoogleAuthProvider,
   signOut,
+  updateProfile,
   onAuthStateChanged,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
@@ -37,7 +38,13 @@ const useFirebase = () => {
       .then((userCredential) => {
         const user = userCredential.user;
         const newUser = { email, displayName: name };
+
         setUser(newUser);
+        updateProfile(auth.currentUser, {
+          displayName: name,
+        })
+          .then(() => {})
+          .catch((error) => {});
       })
       .catch((error) => {
         const errorCode = error.code;
