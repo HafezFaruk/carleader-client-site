@@ -9,7 +9,7 @@ const ManageProduct = () => {
         fetch('https://desolate-cliffs-90588.herokuapp.com/manageProduct')
             .then(res => res.json())
             .then(data => setServices(data));
-    }, [])
+    }, [services])
 
   
     return (

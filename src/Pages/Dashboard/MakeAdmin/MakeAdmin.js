@@ -5,12 +5,14 @@ const MakeAdmin = () => {
   const [success, setSuccess] = useState(false);
 
   const handleOnBlur = (e) => {
+
     setEmail(e.target.value);
   };
   const handleAdminSubmit = (e) => {
-    e.preventDefault();
+    //://desolate-cliffs-90588.herokuapp.com/
     const user = { email };
-    fetch("https://desolate-cliffs-90588.herokuapp.com/users/admin", {
+    console.log(user);
+    fetch("http://localhost:5000/users/admin", {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -20,10 +22,11 @@ const MakeAdmin = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.modifiedCount) {
-          console.log(data);
+          setEmail(data);
           setSuccess(true);
         }
       });
+      e.preventDefault();
   };
   return (
     <div className="mt-5">

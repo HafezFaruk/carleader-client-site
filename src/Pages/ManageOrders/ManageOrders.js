@@ -38,7 +38,7 @@ const ManageOrders = () => {
         </div>
 
         <div className="mx-auto">
-          <Table striped bordered>
+          <Table striped bordered responsive hover>
             <thead>
               <tr>
                 <th>Product Id</th>

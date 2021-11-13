@@ -17,7 +17,7 @@ const LogIn = () => {
   const history = useHistory();
   const location = useLocation();
 
-  const url = location?.state?.from || "/home";
+  const url = location?.state?.from || "/";
 
   const handleGoogleLogin = () => {
     signInWithGoogle()
@@ -33,7 +33,7 @@ const LogIn = () => {
   };
 
   const onSubmit = (data) => {
-    handleEmailLogin(data.email, data.password);
+    handleEmailLogin(data.email, data.password, location, history);
     reset();
   };
   return (

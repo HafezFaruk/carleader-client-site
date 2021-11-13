@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
 import ManageOrders from "../../ManageOrders/ManageOrders";
 import MyOrders from "../../MyOrders/MyOrders";
 import MakeAdmin from "../MakeAdmin/MakeAdmin";
@@ -14,10 +14,11 @@ import { Switch, Route, Link, useRouteMatch } from "react-router-dom";
 
 const Dashboard = () => {
   let { path, url } = useRouteMatch();
-  const { logOut, admin } = useAuth;
-   
+  const { logOut, admin } = useAuth();
+  
   return (
     <>
+    <Container>
       <Row>
         <Col
           xs={12}
@@ -26,7 +27,7 @@ const Dashboard = () => {
           lg={2}
           style={{ borderRight: "3px solid gray", paddingTop: "30px" }}
         >
-          <ul style={{ listStyle: "none", textAlign: "left" }}>
+          <ul style={{ listStyle: "none", marginLeft: '0px', paddingLeft: '0px'}}>
             <div>
               <Link className="btn btn-secondary mb-2 w-100" to={`${url}`}>
                 <li>Dashboard</li>
@@ -52,7 +53,7 @@ const Dashboard = () => {
             </div>
 
             
-              <div>
+              {admin && <div>
                 <Link
                   className="btn btn-success mb-2 w-100"
                   to={`${url}/admin`}
@@ -77,15 +78,15 @@ const Dashboard = () => {
                 >
                   <li>Manage Orders</li>
                 </Link>
-              </div>
+              </div>}
          
 
-            <button
+            <Button
               onClick={logOut}
               className="btn btn-success mt-3 w-100 text-white fw-bold"
             >
               Log Out
-            </button>
+            </Button>
           </ul>
         </Col>
         <Col xs={12} sm={12} md={10} lg={10}>
@@ -118,6 +119,7 @@ const Dashboard = () => {
           </Switch>
         </Col>
       </Row>
+      </Container>
     </>
   );
 };

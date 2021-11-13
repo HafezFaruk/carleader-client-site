@@ -3,12 +3,12 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
-
+import {useHistory} from 'react-router'
 
 const Register = () => {
   const { register, handleSubmit, reset } = useForm();
     const { handleRegister } = useAuth();
-
+    const history = useHistory();
   const onSubmit = (data) => {
     // console.log(data);
     const user = {email: data.email, displayName: data.name}
@@ -17,6 +17,7 @@ const Register = () => {
         alert("added successfully");
         handleRegister(data.email, data.password, data.name)
         reset();
+        history.push('/')
       }
     });
   };

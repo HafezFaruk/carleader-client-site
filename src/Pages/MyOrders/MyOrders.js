@@ -37,7 +37,7 @@ const MyOrders = () => {
           <h2 className="text-center">My Orders</h2>
         </div>
           <div className="mx-auto">
-            <Table striped bordered>
+            <Table striped bordered responsive hover>
               <thead>
                 <tr>
                   <th>Product Id</th>
