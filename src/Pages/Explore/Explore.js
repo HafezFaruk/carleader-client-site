@@ -5,7 +5,7 @@ import SingleExplore from '../SingleExplore/SingleExplore';
 const Explore = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/explore')
+        fetch('https://desolate-cliffs-90588.herokuapp.com/explore')
             .then(res => res.json())
             .then(data => setServices(data));
     }, [])

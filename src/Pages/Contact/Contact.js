@@ -9,7 +9,7 @@ const Contact = () => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
     console.log(data);
-    axios.post("http://localhost:5000/contact", data).then((res) => {
+    axios.post("https://desolate-cliffs-90588.herokuapp.com/contact", data).then((res) => {
       if (res.data.insertedId) {
         alert("added successfully");
         reset();

@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const MakeAdmin = () => {
-    const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [success, setSuccess] = useState(false);
-
 
   const handleOnBlur = (e) => {
     setEmail(e.target.value);
@@ -11,7 +10,7 @@ const MakeAdmin = () => {
   const handleAdminSubmit = (e) => {
     e.preventDefault();
     const user = { email };
-    fetch("http://localhost:5000/users/admin", {
+    fetch("https://desolate-cliffs-90588.herokuapp.com/users/admin", {
       method: "PUT",
       headers: {
         "content-type": "application/json",
@@ -25,19 +24,22 @@ const MakeAdmin = () => {
           setSuccess(true);
         }
       });
-
   };
-    return (
-        <div>
-        <h2>Make an Admin</h2>
-        <form onSubmit={handleAdminSubmit}>
-          <input type="email" placeholder="email" onBlur={handleOnBlur} />
-  
-          <button type="submit">Make Admin</button>
-        </form>
-        {success && <alert severity="success">Made Admin successfully!</alert>}
-      </div>
-    );
+  return (
+    <div className="mt-5">
+      <h2 className="text-danger fs-1">Make <span className="text-white">Admin</span> </h2>
+      <div className="container" style={{marginTop: '5rem'}}>
+      <form onSubmit={handleAdminSubmit}>
+        <input style={{width: '100%', border: 'none', padding: '10px', borderRadius: '5px'}} type="email" placeholder="Email" onBlur={handleOnBlur} />
+        <br />
+        <button className="btn btn-success mt-3 w-100 fw-bold" type="submit">
+          Make Admin
+        </button>
+      </form>
+      {success && <alert severity="success">Made Admin successfully!</alert>}
+    </div>
+    </div>
+  );
 };
 
 export default MakeAdmin;

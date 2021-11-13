@@ -6,7 +6,7 @@ const ManageProduct = () => {
     const [services, setServices] = useState([]);
     
     useEffect(() => {
-        fetch('http://localhost:5000/manageProduct')
+        fetch('https://desolate-cliffs-90588.herokuapp.com/manageProduct')
             .then(res => res.json())
             .then(data => setServices(data));
     }, [])

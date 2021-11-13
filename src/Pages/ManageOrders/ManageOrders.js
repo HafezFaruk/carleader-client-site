@@ -6,14 +6,14 @@ import "./ManageOrders.css";
 const ManageOrders = () => {
   const [carOrders, setCarOrders] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/carOrders")
+    fetch("https://desolate-cliffs-90588.herokuapp.com/carOrders")
       .then((res) => res.json())
       .then((data) => setCarOrders(data));
   }, [carOrders]);
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure you want to delete");
     if (proceed) {
-      const url = `http://localhost:5000/orders/${id}`;
+      const url = `https://desolate-cliffs-90588.herokuapp.com/orders/${id}`;
       console.log(url);
       fetch(url, {
         method: "DELETE",

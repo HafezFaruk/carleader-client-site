@@ -12,7 +12,7 @@ const Register = () => {
   const onSubmit = (data) => {
     // console.log(data);
     const user = {email: data.email, displayName: data.name}
-    axios.post("http://localhost:5000/users", user).then((res) => {
+    axios.post("https://desolate-cliffs-90588.herokuapp.com/users", user).then((res) => {
       if (res.data.insertedId) {
         alert("added successfully");
         handleRegister(data.email, data.password, data.name)

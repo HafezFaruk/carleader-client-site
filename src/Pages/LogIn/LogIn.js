@@ -9,7 +9,7 @@ const LogIn = () => {
     signInWithGoogle,
     user,
     setUser,
-    logOut,
+    logOut, 
     setIsLoading,
     handleEmailLogin,
   } = useAuth();
@@ -57,7 +57,7 @@ const LogIn = () => {
                 placeholder="Your password"
                 required
               />
-              <button className="btn btn-danger w-100 fw-bold" type="submit">
+              <button className="btn btn-success w-100 fw-bold" type="submit">
                 Login
               </button>
             </form>

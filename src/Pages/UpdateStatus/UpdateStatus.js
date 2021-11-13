@@ -13,7 +13,7 @@ const UpdateStatus = () => {
         formState: { errors },
       } = useForm();
     useEffect(() => {
-        const url = `http://localhost:5000/orders/${id}`;
+        const url = `https://desolate-cliffs-90588.herokuapp.com/orders/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setOrder(data));
@@ -22,7 +22,7 @@ const UpdateStatus = () => {
 
     
     const onSubmit = (data) => {
-        fetch(`http://localhost:5000/update/${id}`, {
+        fetch(`https://desolate-cliffs-90588.herokuapp.com/update/${id}`, {
           method: "PUT",
           headers: { "content-type": "application/json" },
           body: JSON.stringify(data),

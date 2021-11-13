@@ -7,7 +7,7 @@ const SingleManageProduct = ({ service }) => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are you sure you want to delete");
     if (proceed) {
-      const url = `http://localhost:5000/product/${id}`;
+      const url = `https://desolate-cliffs-90588.herokuapp.com/product/${id}`;
       console.log(url);
       fetch(url, {
         method: "DELETE",
@@ -21,14 +21,13 @@ const SingleManageProduct = ({ service }) => {
               
             );
             satManageProduct(remainingProducts);
-            satManageProduct('')
           }
         });
     }
   };
   return (
     <div className="col-lg-4">
-      <div className="card mb-3 single-service p-3">
+      <div className="card mb-3 p-3">
         <img src={img} alt="" />
         <div className="d-flex justify-content-between my-3">
           <h4 className="my-3">{name}</h4>

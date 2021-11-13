@@ -11,7 +11,7 @@ const PlaceOrder = () => {
     const { id } = useParams();
     const [order, setOrder] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${id}`)
+        fetch(`https://desolate-cliffs-90588.herokuapp.com/services/${id}`)
             .then(res => res.json())
             .then(data => setOrder(data));
     }, [id])
@@ -21,7 +21,7 @@ const PlaceOrder = () => {
         const price = order.price;
         data.price =price;
 
-        fetch('http://localhost:5000/placeorder', {
+        fetch('https://desolate-cliffs-90588.herokuapp.com/placeorder', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

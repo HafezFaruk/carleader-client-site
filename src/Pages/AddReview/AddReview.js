@@ -9,7 +9,7 @@ const AddReview = () => {
     const onSubmit = data => {
         console.log(data);
 
-        axios.post('http://localhost:5000/review', data)
+        axios.post('https://desolate-cliffs-90588.herokuapp.com/review', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Your Review added successfully');

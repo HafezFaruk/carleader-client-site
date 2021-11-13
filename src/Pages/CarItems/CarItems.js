@@ -5,7 +5,7 @@ import SingleCar from '../SingleCar/SingleCar';
 const CarItems = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://desolate-cliffs-90588.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data));
     }, [])
