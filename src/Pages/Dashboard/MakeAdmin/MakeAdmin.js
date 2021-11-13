@@ -9,10 +9,10 @@ const MakeAdmin = () => {
     setEmail(e.target.value);
   };
   const handleAdminSubmit = (e) => {
-    //://desolate-cliffs-90588.herokuapp.com/
+    
     const user = { email };
     console.log(user);
-    fetch("http://localhost:5000/users/admin", {
+    fetch("https://desolate-cliffs-90588.herokuapp.com/users/admin", {
       method: "PUT",
       headers: {
         "content-type": "application/json",
