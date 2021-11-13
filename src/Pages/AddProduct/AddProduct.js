@@ -30,7 +30,7 @@ const AddProduct = () => {
                         
                         <form onSubmit={handleSubmit(onSubmit)}>
                             <input className="form-control mb-3" {...register("name")} placeholder="Name" required />
-                            <input className="form-control mb-3" {...register("image")} placeholder="image_url" required />
+                            <input className="form-control mb-3" {...register("img")} placeholder="image_url" required />
                             <input className="form-control mb-3" type="number" {...register("price")} placeholder="Price" required/>
                             <textarea rows="4"  className="form-control mb-3" {...register("description")} placeholder="description" required/>
                             <input className="btn btn-success w-25 fw-bold" type="submit" />

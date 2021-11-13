@@ -11,7 +11,7 @@ const ManageProduct = () => {
             .then(data => setServices(data));
     }, [])
 
-   
+  
     return (
         <div className="add-food py-5 text-center">
             <div className="container">

@@ -9,13 +9,10 @@ import NotFound from './Pages/NotFound/NotFound';
 import LogIn from './Pages/LogIn/LogIn';
 import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
 import PrivateRoute from './routes/PrivateRoute';
-// import MyOrders from './Pages/MyOrders/MyOrders';
 import UpdateStatus from './Pages/UpdateStatus/UpdateStatus';
-// import AddReview from './Pages/AddReview/AddReview';
 import Explore from './Pages/Explore/Explore';
 import Register from './Pages/Register/Register';
 import Dashboard from './Pages/Dashboard/Dashboard/Dashboard';
-// import MakeAdmin from './Pages/Dashboard/MakeAdmin/MakeAdmin';
 
 
 function App() {
