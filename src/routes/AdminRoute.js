@@ -4,7 +4,7 @@ import { Route, Redirect } from 'react-router-dom';
 import { Spinner } from 'react-bootstrap';
 
 const AdminRoute = ({ children, ...rest }) => {
-    const { user, isLoading, admin } = useAuth();
+    const { user, admin } = useAuth();
     if (!admin) {
         return <Spinner animation="border" variant="danger" />
     }

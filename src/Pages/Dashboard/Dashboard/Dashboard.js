@@ -28,7 +28,7 @@ const Dashboard = () => {
           style={{ borderRight: "3px solid gray", paddingTop: "30px" }}
         >
           <ul style={{ listStyle: "none", marginLeft: '0px', paddingLeft: '0px'}}>
-            <div>
+          {!admin &&  <div>
               <Link className="btn btn-secondary mb-2 w-100" to={`${url}`}>
                 <li>Dashboard</li>
               </Link>
@@ -50,7 +50,7 @@ const Dashboard = () => {
               >
                 <li>Payment</li>
               </Link>
-            </div>
+            </div>}
 
             
               {admin && <div>
