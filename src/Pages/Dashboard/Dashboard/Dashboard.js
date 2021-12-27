@@ -18,107 +18,115 @@ const Dashboard = () => {
   
   return (
     <>
-    <Container>
-      <Row>
-        <Col
-          xs={12}
-          sm={12}
-          md={2}
-          lg={2}
-          style={{ borderRight: "3px solid gray", paddingTop: "30px" }}
-        >
-          <ul style={{ listStyle: "none", marginLeft: '0px', paddingLeft: '0px'}}>
-          {!admin &&  <div>
+      <Container>
+        <Row>
+          <Col
+            xs={12}
+            sm={12}
+            md={2}
+            lg={2}
+            style={{ borderRight: "3px solid gray", paddingTop: "30px" }}
+          >
+            <ul
+              style={{
+                listStyle: "none",
+                marginLeft: "0px",
+                paddingLeft: "0px",
+              }}
+            >
               <Link className="btn btn-secondary mb-2 w-100" to={`${url}`}>
                 <li>Dashboard</li>
               </Link>
-              <Link
-                className="btn btn-success mb-2 w-100"
-                to={`${url}/myOrders`}
-              >
-                <li>MyOrders</li>
-              </Link>
-              <Link
-                className="btn btn-success mb-2 w-100"
-                to={`${url}/addReview`}
-              >
-                <li>AddReview</li>
-              </Link>
-              <Link
-                className="btn btn-success mb-2 w-100"
-                to={`${url}/payment`}
-              >
-                <li>Payment</li>
-              </Link>
-            </div>}
+              {!admin && (
+                <div>
+                  <Link
+                    className="btn btn-success mb-2 w-100"
+                    to={`${url}/myOrders`}
+                  >
+                    <li>MyOrders</li>
+                  </Link>
+                  <Link
+                    className="btn btn-success mb-2 w-100"
+                    to={`${url}/addReview`}
+                  >
+                    <li>AddReview</li>
+                  </Link>
+                  <Link
+                    className="btn btn-success mb-2 w-100"
+                    to={`${url}/payment`}
+                  >
+                    <li>Payment</li>
+                  </Link>
+                </div>
+              )}
 
-            
-              {admin && <div>
-                <Link
-                  className="btn btn-success mb-2 w-100"
-                  to={`${url}/admin`}
-                >
-                  <li>MakeAdmin</li>
-                </Link>
-                <Link
-                  className="btn btn-success mb-2 w-100"
-                  to={`${url}/addProduct`}
-                >
-                  <li>AddProduct</li>
-                </Link>
-                <Link
-                  className="btn btn-success mb-2 w-100"
-                  to={`${url}/manageProduct`}
-                >
-                  <li>Manage Product</li>
-                </Link>
-                <Link
-                  className="btn btn-success mb-2 w-100"
-                  to={`${url}/manageOrders`}
-                >
-                  <li>Manage Orders</li>
-                </Link>
-              </div>}
-         
+              {admin && (
+                <div>
+                  <Link
+                    className="btn btn-success mb-2 w-100"
+                    to={`${url}/admin`}
+                  >
+                    <li>MakeAdmin</li>
+                  </Link>
+                  <Link
+                    className="btn btn-success mb-2 w-100"
+                    to={`${url}/addProduct`}
+                  >
+                    <li>AddProduct</li>
+                  </Link>
+                  <Link
+                    className="btn btn-success mb-2 w-100"
+                    to={`${url}/manageProduct`}
+                  >
+                    <li>Manage Product</li>
+                  </Link>
+                  <Link
+                    className="btn btn-success mb-2 w-100"
+                    to={`${url}/manageOrders`}
+                  >
+                    <li>Manage Orders</li>
+                  </Link>
+                </div>
+              )}
 
-            <Button
-              onClick={logOut}
-              className="btn btn-success mt-3 w-100 text-white fw-bold"
-            >
-              Log Out
-            </Button>
-          </ul>
-        </Col>
-        <Col xs={12} sm={12} md={10} lg={10}>
-          <Switch>
-            <Route exact path={path}>
-              <Welcome></Welcome>
-            </Route>
-            <Route path={`${path}/addReview`}>
-              <AddReview></AddReview>
-            </Route>
-            <Route path={`${path}/payment`}>
-              <Payment></Payment>
-            </Route>
+              <Button
+                onClick={logOut}
+                className="btn btn-success mt-3 w-100 text-white fw-bold"
+              >
+                Log Out
+              </Button>
+            </ul>
+          </Col>
+          <Col xs={12} sm={12} md={10} lg={10}>
+            <Switch>
+              <Route exact path={path}>
+                <Welcome></Welcome>
+              </Route>
+              <Route path={`${path}/addReview`}>
+                <AddReview></AddReview>
+              </Route>
+              <Route path={`${path}/payment`}>
+                <Payment></Payment>
+              </Route>
 
-            <Route path={`${path}/myOrders`}>
-              <MyOrders></MyOrders>
-            </Route>
-            <AdminRoute path={`${path}/manageOrders`}>
-              <ManageOrders></ManageOrders>
-            </AdminRoute>
-            <AdminRoute path={`${path}/admin`}>
-              <MakeAdmin></MakeAdmin>
-            </AdminRoute>
-            <AdminRoute path={`${path}/addProduct`}>
-              <AddProduct></AddProduct>
-            </AdminRoute>
-            <AdminRoute path={`${path}/manageProduct`}>
-              <ManageProduct></ManageProduct>
-            </AdminRoute>
-          </Switch>
-        </Col>
-      </Row>
+              <Route path={`${path}/myOrders`}>
+                <MyOrders></MyOrders>
+              </Route>
+              <AdminRoute path={`${path}/manageOrders`}>
+                <ManageOrders></ManageOrders>
+              </AdminRoute>
+              <AdminRoute path={`${path}/admin`}>
+                <MakeAdmin></MakeAdmin>
+              </AdminRoute>
+              <AdminRoute path={`${path}/addProduct`}>
+                <AddProduct></AddProduct>
+              </AdminRoute>
+              <AdminRoute path={`${path}/manageProduct`}>
+                <ManageProduct></ManageProduct>
+              </AdminRoute>
+            </Switch>
+          </Col>
+        </Row>
       </Container>
     </>
   );

@@ -2,7 +2,11 @@
 
 # live site(https://carleader-c125c.web.app/)
 
-### ➡ You can buy high quality car at low price from our company on our car sales website. The main reason is that we make our own with our own manufacturer.
+### ➡ Anyone can buy a high-quality car at a discount price from our car leader website 
+### ➡ you will get a minimum speed of forty litters per hour of new car 
+### ➡ On our carLeader website, you can get a maximum branded new car, you can also get car insurance.
+
+### ➡ You can buy high-quality car at low price from our company on our car sales website. The main reason is that we make our own with our own manufacturer.
 
 ### ➡ You will get the service you want in our cars. In all of us, you will get a bowl in the country. That is, you can go far with 1 liter of oil and more than 30 kilometers.
 

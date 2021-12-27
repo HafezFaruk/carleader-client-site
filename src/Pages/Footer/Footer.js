@@ -17,6 +17,7 @@ const Footer = () => {
             <div className="col">
               <h6>+88 01629 78 63 99</h6>
               <h6>Dhaka, Bangladesh</h6>
+              <h6>INFO@YOUREMAL.COM</h6>
               <div className="fs-1">
                 <FaFacebookSquare />
                 <span className="mx-4">
@@ -26,12 +27,12 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="py-3">
-            <p className="text-muted text-center">
-              © COPYRIGHT 2021 CALEADER privacy policy
-            </p>
-          </div>
         </div>
+      </div>
+      <div className="py-3 bg-dark">
+        <p className="text-muted text-center">
+          © Copyright 2021 CarLeader privacy policy
+        </p>
       </div>
     </>
   );

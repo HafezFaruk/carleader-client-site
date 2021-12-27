@@ -29,15 +29,13 @@ const SingleManageProduct = ({ service }) => {
     <div className="col-lg-4">
       <div className="card mb-3 p-3">
         <img src={img} alt="" />
-        <div className="d-flex justify-content-between my-3">
-          <h4 className="my-3">{name}</h4>
-        </div>
-        <h3>Price: $ {price}</h3>
-        <p className="text-justify">{description.slice(0, 105)}</p>
-        <div className="text-center">
+        <h4>{name}</h4>
+        <h5>Price: $ {price}</h5>
+        <p>{description.slice(0, 80)}...</p>
+        <div>
           <button
             onClick={() => handleDelete(_id)}
-            className="btn btn-danger w-100"
+            className="btn btn-danger"
           >
             Delete Product
           </button>

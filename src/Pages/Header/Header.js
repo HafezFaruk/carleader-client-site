@@ -29,7 +29,7 @@ const Header = () => {
             <Nav.Link as={Link} className="text-white" to="/explore">
               Explore
             </Nav.Link>
-          
+
             {user.email && (
               <>
                 <Nav.Link as={Link} className="text-white" to="/dashboard">
@@ -38,7 +38,7 @@ const Header = () => {
               </>
             )}
             <Navbar.Text className="text-dark">
-              <a href="#login" className="text-white">
+              <a style={{textDecoration: 'none'}} href="#login" className="text-white">
                 {user?.displayName}
               </a>
             </Navbar.Text>
@@ -47,7 +47,11 @@ const Header = () => {
                 Login
               </Nav.Link>
             ) : (
-              <button onClick={logOut} variant="light">
+              <button
+                className="btn btn-success"
+                onClick={logOut}
+                variant="light"
+              >
                 Logout
               </button>
             )}

@@ -27,7 +27,7 @@ const Contact = () => {
             <div className="contact-text">
               <h4>
                 GOT ANY QUESTIONS?
-                <span className="text-danger">___________</span>{" "}
+                <span className="text-danger">___________</span>
               </h4>
               <h1>GET IN TOUCH</h1>
             </div>
@@ -68,7 +68,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="col bg-dark py-4 px-4">
+        <div style={{borderRadius: '10px', paddingTop: '30px'}} className="col bg-dark px-4">
           <form onSubmit={handleSubmit(onSubmit)}>
             <input
               className="form-control bg-dark mb-3"
@@ -95,13 +95,13 @@ const Contact = () => {
               required
             />
             <textarea
-              rows="8"
+              rows="7"
               className="form-control bg-dark text-white mb-3"
               {...register("message")}
               placeholder="Your Message"
               required
             />
-            <input className="btn btn-danger w-100 fw-bold" type="submit" />
+            <input className="btn btn-danger w-100 fw-bold mb-0" type="submit" />
           </form>
         </div>
       </div>
