@@ -26,17 +26,19 @@ const SingleManageProduct = ({ service }) => {
     }
   };
   return (
-    <div className="col-lg-4">
+    <div
+      data-aos="zoom-in-up"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+      className="col-lg-6"
+    >
       <div className="card mb-3 p-3">
         <img src={img} alt="" />
         <h4>{name}</h4>
         <h5>Price: $ {price}</h5>
         <p>{description.slice(0, 80)}...</p>
         <div>
-          <button
-            onClick={() => handleDelete(_id)}
-            className="btn btn-danger"
-          >
+          <button onClick={() => handleDelete(_id)} className="btn btn-danger">
             Delete Product
           </button>
         </div>

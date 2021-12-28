@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Spinner } from 'react-bootstrap';
 import SingleManageProduct from './SingleManageProduct';
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 const ManageProduct = () => {
     const [services, setServices] = useState([]);
-    
+     useEffect(() => {
+       AOS.init();
+     });
     useEffect(() => {
         fetch('https://desolate-cliffs-90588.herokuapp.com/manageProduct')
             .then(res => res.json())
